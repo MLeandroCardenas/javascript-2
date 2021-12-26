@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select onchange="cambio(event.target.value)">
+            <option value="#FCB508" selected>Seleccione Uno</option>
+            <option value="#FFC300">Colombia</option>
+            <option value="#900C3F" >Venezuela</option>
+            <option value="#AC33FF" >Peru</option>
+            <option value="#FF3346" >España</option>
+        </select>
+    </form>
+    <br><br><br><br><br>
+    <div class="cuadro" style="background: #FCB508; width: 200px; height: 200px;"></div>
+    <br>
+    <span></span>
+    <br>
+    <input type="submit" value="!Listo" onclick="verificar()">
+    <script src="index.js"></script>
+</body>
+</html>
