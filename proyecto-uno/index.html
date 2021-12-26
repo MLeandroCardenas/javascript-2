@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4 id="par" class="form-horizontal">Bienvenidos a Javascript</h4>
+
+    <form name="calc" action="segundaPag.html" method="post"> 
+         <input type=text name=operando1 value="0" size="12">
+         <br/> 
+         <br/>
+         <input type=text name=operando2 value="0" size="12">
+         <br/>
+         <br/>
+         <input type="button" name="" value=" + " onclick="calcula('+')">
+         <input type="button" name="" value=" - " onclick="calcula('-')">
+         <input type="button" name="" value=" * " onclick="calcula('*')">
+         <input type="button" name="" value=" / " onclick="calcula('/')">
+         <br/>
+         <br/>
+         <input type="text" name="resultado" value="0" size="12">
+         <!-- <input type="submit" value="!Listo"> -->
+         <input type="button" value="Limpiar" onclick="validateReset()">
+         <input type="button" value="!Listo" onclick="validateSubmit()">
+
+         <br> <br>
+
+         <input type="button" value="cambia valor por defecto" onclick="cambiaDefecto()">
+         <input type="button" value="enfocar" onfocus="seleccionarFoco()">         
+         <input type="password" name="passwordField">         
+         <input type="hidden" name="hiddenField">         
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
