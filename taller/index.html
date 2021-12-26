@@ -9,9 +9,40 @@
 <body>
     <fieldset>
         <legend>Pagos</legend>
-        <form action="segunda.html" method="post">
-            <input type="button" value="registrar compra" onclick="registrar()">
+        <form id="formPagos">
+            <input type="text"  placeholder="Nombres y apellidos" size="35" class="txtNombres">
+            <label>Valor a pagar</label>
+            <input type="number"  placeholder="$0.0" size="35" class="txtPago">
+            <br><br>
+            <label>Descripción pago</label>
+            <br>
+            <textarea cols="35" rows="5" class="txtDescripcion"></textarea>
+            <br><br>
+            <label>Fecha de nacimiento</label>
+            <br>
+            <input type="date" min="1956-01-01" max="2002-12-31" class="txtDate">
+            <label>Género</label>
+            <select class="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino" selected>Femenino</option>
+            </select>
+            <br><br>
+            <label>Seleccione tipo de crédito</label>
+            <br>
+            <input type="Radio" name="tipoCredito" value="rotativo" checked> Rotativo
+            <br>
+            <input type="Radio" name="tipoCredito" value="leasing"> Leasing habitacional
+            <br>
+            <input type="Radio" name="tipoCredito" value="hipotecario"> Hipotecario
+            <br>
+            <input type="Radio" name="tipoCredito" value="consumo"> Consumo
+            <br><br>
+            <label>¿Es titular del crédito?</label>
+            <input type="checkbox" class="isTitular">
+            <br><br>
+            <input type="button" value="registrar pago" onclick="registrar()">
         </form>
     </fieldset>
+    <script src="index.js"></script>
 </body>
 </html>
