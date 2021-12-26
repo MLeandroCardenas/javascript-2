@@ -32,8 +32,48 @@
          <input type="button" value="cambia valor por defecto" onclick="cambiaDefecto()">
          <input type="button" value="enfocar" onfocus="seleccionarFoco()">         
          <input type="password" name="passwordField">         
-         <input type="hidden" name="hiddenField">         
+         <input type="hidden" name="hiddenField">    
+         <br> <br>     
+         <input type="checkbox" name="micheck" value="aprobado">
+         <br>
+         <input type="button" value="esta checkeado?" onclick="alertaCheck()">
+         <br> <br>
+         <input type="button" value="Que valor tiene?" onclick="alertaValue()">
+         <br> <br>
+         <input type="button" value="Simula un click" onclick="metodoClic()">
 
+         <br><br><br>
+
+         <input type="Radio" name="futbolista" value="messi" checked> Messi
+         <br><br>
+         <input type="Radio" name="futbolista" value="falcao"> Falcao
+         <br><br>
+         <input type="Radio" name="futbolista" value="james"> James
+         <br><br>
+         <input type="Radio" name="futbolista" value="ronaldo"> Ronaldo
+         <br><br>
+
+         <input type="button" name="" value="Cambia futbolista" onclick="cambiaFutboolista()"> 
+
+
+         <br><br>
+
+         <select name="selectExc">
+             <option value="10">Muy bien</option>
+             <option value="5" selected>regular</option>
+             <option value="0">Muy mal</option>
+         </select>
+         <br><br>
+         <input type="button" value="Propiedades Select" onclick="propiedades()">
+
+         <br><br>
+
+         <textarea name="textito" cols="40" rows="3"></textarea>
+         <br><br>
+         numero de caracteres <input type="text" name="numeroCaracteres" size="4">
+         <br><br>
+         <input type="button" value="cuenta caracteres" onclick="cuenta()">
+         
     </form>
 
     <script src="index.js"></script>

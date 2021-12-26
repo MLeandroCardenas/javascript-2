@@ -35,3 +35,39 @@ function seleccionarFoco() {
     document.calc.operando1.focus();
     document.calc.operando1.select();
 }
+
+
+function alertaCheck() {
+    alert(document.calc.micheck.checked);
+}
+
+function alertaValue() {
+    alert(document.calc.micheck.value);
+}
+
+function metodoClic() {
+    document.calc.micheck.click();
+}
+
+function cambiaFutboolista() {
+    let i;
+    for( i=0; i<document.calc.futbolista.length; i++ ) {
+        if(document.calc.futbolista[i].checked)
+            break;
+    }
+    alert('El futbolista es ' + document.calc.futbolista[i].value);
+}
+
+function propiedades() {
+    let texto;
+    texto = 'El numero de opciones del select: ' + document.calc.selectExc.length + ' ';
+    let indice = document.calc.selectExc.selectedIndex;
+    texto += `indice de la opcion escojida: ${indice} `;
+    let valor = document.calc.selectExc.options[indice].value;
+    alert(texto);
+}
+
+function cuenta() {
+    let num = document.calc.textito.value.length;
+    document.calc.numeroCaracteres.value = num;
+}
